@@ -2,13 +2,21 @@ body {
   font-family: 'Noto Sans KR';
 }
 .text {
-  color: #969696;
+  color: #7e7e7e;
   padding: 0.5rem 0 2rem;
   line-height: 1.5rem;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 /* top */
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+}
 .logo-img {
   position: absolute;
   top: 30px;
@@ -30,7 +38,7 @@ body {
   font-family: 'Noto Sans KR';
 }
 
-/* middle */
+/* company */
 .company {
   background: url(/images/od-bg.jpg);
   padding: 85px 0;
@@ -63,13 +71,13 @@ body {
   border-radius: 50px;
 }
 
+/* container */
 .ceo-history {
   background: #000 url(/images/ceo-bg.jpg) no-repeat 0px;
   height: 530px;
 }
 .container {
   display: flex;
-  vertical-align: middle;
 }
 main {
   width: 49%;
@@ -82,9 +90,9 @@ aside {
   width: 47%;
   padding: 6rem 0 0 6rem;
 }
-.title {
+aside h1 {
   font-size: 2.2rem;
-  font-weight: 800;
+  font-weight: 900;
   padding-bottom: 2.5rem;
 }
 .caption {
@@ -96,4 +104,107 @@ aside {
   font-weight: 600;
   letter-spacing: 0.5rem;
   padding-bottom: 1.2rem;
+}
+
+/* production */
+.prodution {
+  background: url(/images/production-bg.jpg) no-repeat;
+}
+.prodution h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+.prodution ul {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.prodution img {
+  padding-right: 1.3rem;
+}
+
+/* sns */
+.sns {
+  background: #f2f4f6;
+}
+.sns ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.sns img {
+  height: 50px;
+  padding-right: 2rem;
+}
+
+/* instagram */
+.instagram h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding-top: 4rem;
+  padding-bottom: 9rem;
+  text-align: center;
+}
+
+/* youtube */
+.youtube {
+  background: url(/images/od-bg.jpg);
+}
+.youtube h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+  text-align: center;
+}
+
+/* news */
+.news {
+  background: #f8f8f8;
+  padding-bottom: 6rem;
+}
+.news h1 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.news article {
+  width: 1300px;
+  margin: auto;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  padding: 55px 57px 55px 190px;
+}
+.date {
+  position: absolute;
+  text-align: center;
+  left: 370px;
+  font-size: 44px;
+}
+.date span {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  font-size: 13px;
+  color: #7e7e7e;
+}
+article strong {
+  font-size: 18px;
+  font-weight: 500;
+}
+article a {
+  line-height: 1.5rem;
+  font-size: 15px;
+}
+article a:hover {
+  text-decoration: underline;
 }
